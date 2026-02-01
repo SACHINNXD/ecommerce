@@ -1,17 +1,92 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Full viewport */
 html, body {
   width: 100%;
   height: 100%;
+  background: #9DA7A9;
+  font-family: system-ui, sans-serif;
 }
 
-/* Exact background color from image */
-body {
-  background-color: #9DA7A9;
+/* App Shell */
+.app {
+  width: 95%;
+  height: 92%;
+  margin: auto;
+  margin-top: 2%;
+  background: #EEF2EF;
+  border-radius: 28px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Top Bar */
+.topbar {
+  height: 70px;
+  background: #E3E8E6;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 120px 1fr 180px;
+  gap: 16px;
+  padding: 14px;
+}
+
+.logo,
+.search,
+.actions {
+  background: #F7FAF9;
+  border-radius: 16px;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 20px;
+}
+
+/* Hero */
+.hero {
+  background: #F7FAF9;
+  border-radius: 28px;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-card {
+  height: 140px;
+  background: #F7FAF9;
+  border-radius: 24px;
+}
+
+.side-card.tall {
+  flex: 1;
+}
+
+/* Bottom Section */
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 20px;
+}
+
+.card {
+  height: 150px;
+  background: #F7FAF9;
+  border-radius: 24px;
+}
+
+.card.wide {
+  grid-column: span 1;
 }
