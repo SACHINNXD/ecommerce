@@ -11,21 +11,17 @@ html, body {
   font-family: system-ui, sans-serif;
 }
 
-/* App shell */
+/* App */
 .app {
   width: 95%;
-  height: 92%;
-  margin: auto;
-  margin-top: 2%;
+  height: 120px;
+  margin: 40px auto;
   background: #EEF2EF;
   border-radius: 28px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  padding: 16px 20px;
 }
 
-/* Top Bar */
+/* Topbar */
 .topbar {
   height: 72px;
   background: #E3E8E6;
@@ -43,7 +39,7 @@ html, body {
   gap: 16px;
 }
 
-/* Logo pill */
+/* Logo */
 .logo-pill {
   height: 48px;
   padding: 0 14px;
@@ -54,43 +50,43 @@ html, body {
   gap: 10px;
 }
 
-.logo-mark {
-  width: 26px;
-  height: 26px;
-  background: #000;
-  border-radius: 8px;
+.logo-icon {
+  width: 22px;
+  height: 22px;
+  background: #d5dad8;
+  border-radius: 6px;
 }
 
 .logo-text {
-  width: 48px;
-  height: 14px;
-  background: #000;
-  border-radius: 4px;
+  width: 44px;
+  height: 12px;
+  background: #d5dad8;
+  border-radius: 6px;
 }
 
-/* Search pill (SHORT, not full width) */
+/* Search */
 .search-pill {
   height: 48px;
-  width: 360px;
+  width: 340px;
   background: #ffffff;
   border-radius: 999px;
   display: flex;
   align-items: center;
-  padding: 0 6px 0 18px;
+  padding: 0 8px 0 18px;
   gap: 12px;
 }
 
-.search-input {
+.search-placeholder {
   flex: 1;
-  height: 14px;
-  background: #dfe4e2;
+  height: 12px;
+  background: #e3e7e5;
   border-radius: 6px;
 }
 
-.search-btn {
-  width: 36px;
-  height: 36px;
-  background: #000;
+.search-icon {
+  width: 34px;
+  height: 34px;
+  background: #1f1f1f;
   border-radius: 50%;
 }
 
@@ -101,58 +97,32 @@ html, body {
   gap: 12px;
 }
 
-.icon-btn {
+/* Icon buttons */
+.icon-circle {
   width: 44px;
   height: 44px;
   background: #ffffff;
   border-radius: 50%;
 }
 
-.user-pill {
-  height: 44px;
-  width: 120px;
+.icon-circle.heart {
   background: #ffffff;
+}
+
+/* Login */
+.login-btn {
+  height: 44px;
+  padding: 0 22px;
+  background: #ffffff;
+  border: none;
   border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Main Content */
-.content {
-  flex: 1;
-  display: grid;
-  grid-template-columns: 2.2fr 1fr;
-  gap: 20px;
-}
-
-.hero {
-  background: #F7FAF9;
-  border-radius: 28px;
-}
-
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.side-card {
-  height: 140px;
-  background: #F7FAF9;
-  border-radius: 24px;
-}
-
-.side-card.tall {
-  flex: 1;
-}
-
-/* Bottom */
-.bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.card {
-  height: 150px;
-  background: #F7FAF9;
-  border-radius: 24px;
+.login-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
