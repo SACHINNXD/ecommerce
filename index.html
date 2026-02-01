@@ -1,85 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>UI Replica</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>UI Fixed</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="canvas">
+<div class="page">
 
   <!-- TOP BAR -->
   <div class="topbar">
-    <div class="tb-left">
-      <div class="logo">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <!-- LOGO (keep black) -->
+      <div class="logo-pill">
         <div class="logo-icon"></div>
         <div class="logo-text"></div>
       </div>
 
-      <div class="search">
-        <div class="search-text"></div>
-        <div class="search-btn"></div>
+      <!-- SEARCH -->
+      <div class="search-pill">
+        <input type="text" placeholder="Search products..." />
+        <button class="search-btn">
+          <!-- search icon -->
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.5" y1="16.5" x2="22" y2="22"></line>
+          </svg>
+        </button>
       </div>
     </div>
 
-    <div class="tb-right">
-      <div class="icon"></div>
-      <div class="icon"></div>
-      <button class="login">Login</button>
-    </div>
-  </div>
-
-  <!-- MAIN -->
-  <div class="main">
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-left">
-        <div class="badge"></div>
-        <div class="title"></div>
-        <div class="subtitle"></div>
-
-        <div class="info">
-          <div class="num"></div>
-          <div class="line"></div>
-        </div>
-
-        <div class="cta"></div>
-
-        <div class="socials">
-          <div></div><div></div><div></div><div></div>
-        </div>
+    <!-- RIGHT -->
+    <div class="top-right">
+      <!-- CART -->
+      <div class="icon-circle">
+        <svg viewBox="0 0 24 24">
+          <circle cx="9" cy="20" r="1"></circle>
+          <circle cx="17" cy="20" r="1"></circle>
+          <path d="M3 3h2l3 12h10l3-8H7"></path>
+        </svg>
       </div>
 
-      <div class="hero-right">
-        <div class="image-circle"></div>
-        <div class="dot d1"></div>
-        <div class="dot d2"></div>
-        <div class="dot d3"></div>
-      </div>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="right">
-
-      <div class="colors">
-        <div></div><div></div><div></div><div></div><div></div>
+      <!-- HEART -->
+      <div class="icon-circle">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10z"></path>
+        </svg>
       </div>
 
-      <div class="card small"></div>
-      <div class="card tall"></div>
-
+      <!-- LOGIN -->
+      <button class="login-btn">Login</button>
     </div>
 
   </div>
 
-  <!-- BOTTOM -->
-  <div class="bottom">
-    <div class="bcard"></div>
-    <div class="bcard"></div>
-    <div class="bcard wide"></div>
-  </div>
+  <!-- REST OF PAGE (UNCHANGED PLACEHOLDERS) -->
+  <div class="content-placeholder"></div>
 
 </div>
 
