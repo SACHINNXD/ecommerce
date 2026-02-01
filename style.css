@@ -12,13 +12,18 @@ html, body {
 
 .app {
   width: 95%;
-  margin: 40px auto;
+  height: 92%;
+  margin: auto;
+  margin-top: 2%;
   background: #EEF2EF;
   border-radius: 28px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-/* Topbar */
+/* TOP BAR */
 .topbar {
   height: 72px;
   background: #E3E8E6;
@@ -29,48 +34,38 @@ html, body {
   align-items: center;
 }
 
-/* Left */
-.left {
+.left, .right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
-/* Logo */
 .logo-pill {
   height: 48px;
   padding: 0 14px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 999px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.logo-icon {
-  width: 22px;
-  height: 22px;
+.logo-icon, .logo-text {
   background: #d7dbd9;
   border-radius: 6px;
 }
 
-.logo-text {
-  width: 46px;
-  height: 12px;
-  background: #d7dbd9;
-  border-radius: 6px;
-}
+.logo-icon { width: 22px; height: 22px; }
+.logo-text { width: 46px; height: 12px; }
 
-/* Search */
 .search-pill {
   width: 360px;
   height: 48px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 999px;
   display: flex;
   align-items: center;
   padding: 0 8px 0 18px;
-  gap: 12px;
 }
 
 .search-text {
@@ -85,58 +80,140 @@ html, body {
   height: 36px;
   background: #1f1f1f;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search-btn svg {
-  width: 16px;
-  height: 16px;
-  stroke: #ffffff;
-  stroke-width: 2;
-  fill: none;
-}
-
-/* Right */
-.right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
 .icon-pill {
   width: 44px;
   height: 44px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.icon-pill svg {
-  width: 18px;
-  height: 18px;
-  stroke: #8e9593;
-  stroke-width: 1.8;
-  fill: none;
-}
-
-/* Login */
 .login-btn {
   height: 44px;
   padding: 0 22px;
-  background: #ffffff;
-  border: none;
+  background: #fff;
   border-radius: 999px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
 }
 
-.login-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+/* MAIN */
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  gap: 18px;
+}
+
+/* HERO */
+.hero {
+  background: #F7FAF9;
+  border-radius: 28px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pill {
+  width: 120px;
+  height: 26px;
+  background: #e4e8e6;
+  border-radius: 999px;
+}
+
+.title {
+  width: 80%;
+  height: 38px;
+  background: #d7dbd9;
+  border-radius: 8px;
+}
+
+.subtitle {
+  width: 60%;
+  height: 18px;
+  background: #e4e8e6;
+  border-radius: 6px;
+}
+
+.cta {
+  width: 180px;
+  height: 44px;
+  background: #e6ff8f;
+  border-radius: 999px;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.circle {
+  background: #dde2e0;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle.big { width: 220px; height: 220px; top: 20px; right: 40px; }
+.circle.small { width: 20px; height: 20px; top: 10px; left: 80px; }
+.circle.tiny { width: 10px; height: 10px; bottom: 30px; left: 120px; }
+
+/* RIGHT COLUMN */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.colors-card {
+  background: #F7FAF9;
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 26px;
+  height: 26px;
+  background: #dde2e0;
+  border-radius: 50%;
+}
+
+.product-card {
+  height: 160px;
+  background: #F7FAF9;
+  border-radius: 24px;
+}
+
+.tall-card {
+  flex: 1;
+  background: #F7FAF9;
+  border-radius: 24px;
+}
+
+/* BOTTOM */
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 18px;
+}
+
+.bottom-card {
+  height: 140px;
+  background: #F7FAF9;
+  border-radius: 24px;
+}
+
+.bottom-wide {
+  height: 140px;
+  background: #F7FAF9;
+  border-radius: 24px;
 }
