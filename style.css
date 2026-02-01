@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-/* Full-screen background */
+/* Full viewport */
 html, body {
   width: 100%;
   height: 100%;
 }
 
-/* Single background color only */
+/* Exact background color from image */
 body {
-  background-color: #f4f2e6;
+  background-color: #9DA7A9;
 }
