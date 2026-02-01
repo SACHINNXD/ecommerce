@@ -10,7 +10,7 @@ html, body {
   font-family: system-ui, sans-serif;
 }
 
-/* OUTER FRAME */
+/* FRAME */
 .frame {
   width: 95%;
   height: 92%;
@@ -46,7 +46,7 @@ html, body {
 .logo-pill {
   height: 48px;
   padding: 0 14px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@ html, body {
 .search-pill {
   width: 360px;
   height: 48px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -88,40 +88,27 @@ html, body {
 .search-btn {
   width: 36px;
   height: 36px;
-  background: #111;
+  background: #111111;
   border-radius: 50%;
 }
 
-/* RIGHT ICONS */
+/* ICONS + LOGIN */
 .circle-btn {
   width: 44px;
   height: 44px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 50%;
 }
 
-.user-pill {
+.login-btn {
   height: 44px;
-  padding: 0 10px;
-  background: #fff;
+  padding: 0 22px;
+  background: #ffffff;
   border-radius: 999px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.user-text {
-  width: 70px;
-  height: 12px;
-  background: #d7dbd9;
-  border-radius: 6px;
-}
-
-.user-avatar {
-  width: 28px;
-  height: 28px;
-  background: #d7dbd9;
-  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /* MAIN */
@@ -284,16 +271,6 @@ html, body {
   background: #F7FAF9;
   border-radius: 24px;
   padding: 16px;
-}
-
-.bottom-card.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.bottom-card.wide {
-  grid-column: span 1;
 }
 
 .thumbs {
