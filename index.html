@@ -2,37 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Topbar Exact</title>
+  <title>Exact Topbar</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app">
 
-    <!-- Top Bar -->
-    <div class="topbar">
+<div class="app">
+  <div class="topbar">
 
-      <!-- Left -->
-      <div class="top-left">
-        <div class="logo-pill">
-          <div class="logo-icon"></div>
-          <div class="logo-text"></div>
-        </div>
-
-        <div class="search-pill">
-          <div class="search-placeholder"></div>
-          <div class="search-icon"></div>
-        </div>
+    <!-- Left: Logo + Search -->
+    <div class="left">
+      <div class="logo-pill">
+        <div class="logo-icon"></div>
+        <div class="logo-text"></div>
       </div>
 
-      <!-- Right -->
-      <div class="top-right">
-        <div class="icon-circle"></div>
-        <div class="icon-circle heart"></div>
-        <button class="login-btn">Login</button>
+      <div class="search-pill">
+        <div class="search-text"></div>
+        <div class="search-btn">
+          <!-- Search icon -->
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.5" y1="16.5" x2="22" y2="22"></line>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Cart, Heart, Login -->
+    <div class="right">
+      <div class="icon-pill">
+        <!-- Cart -->
+        <svg viewBox="0 0 24 24">
+          <circle cx="9" cy="20" r="1"></circle>
+          <circle cx="17" cy="20" r="1"></circle>
+          <path d="M3 3h2l3 12h10l3-8H7"></path>
+        </svg>
       </div>
 
+      <div class="icon-pill">
+        <!-- Heart -->
+        <svg viewBox="0 0 24 24">
+          <path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10z"></path>
+        </svg>
+      </div>
+
+      <button class="login-btn">Login</button>
     </div>
 
   </div>
+</div>
+
 </body>
 </html>
