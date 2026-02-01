@@ -5,20 +5,17 @@
 }
 
 html, body {
-  width: 100%;
   height: 100%;
   background: #9DA7A9;
   font-family: system-ui, sans-serif;
 }
 
-/* App */
 .app {
   width: 95%;
-  height: 120px;
   margin: 40px auto;
   background: #EEF2EF;
   border-radius: 28px;
-  padding: 16px 20px;
+  padding: 20px;
 }
 
 /* Topbar */
@@ -28,12 +25,12 @@ html, body {
   border-radius: 22px;
   padding: 12px 16px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-/* Left side */
-.top-left {
+/* Left */
+.left {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -53,21 +50,21 @@ html, body {
 .logo-icon {
   width: 22px;
   height: 22px;
-  background: #d5dad8;
+  background: #d7dbd9;
   border-radius: 6px;
 }
 
 .logo-text {
-  width: 44px;
+  width: 46px;
   height: 12px;
-  background: #d5dad8;
+  background: #d7dbd9;
   border-radius: 6px;
 }
 
 /* Search */
 .search-pill {
+  width: 360px;
   height: 48px;
-  width: 340px;
   background: #ffffff;
   border-radius: 999px;
   display: flex;
@@ -76,37 +73,54 @@ html, body {
   gap: 12px;
 }
 
-.search-placeholder {
+.search-text {
   flex: 1;
   height: 12px;
-  background: #e3e7e5;
+  background: #e4e8e6;
   border-radius: 6px;
 }
 
-.search-icon {
-  width: 34px;
-  height: 34px;
+.search-btn {
+  width: 36px;
+  height: 36px;
   background: #1f1f1f;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Right side */
-.top-right {
+.search-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: #ffffff;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* Right */
+.right {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* Icon buttons */
-.icon-circle {
+.icon-pill {
   width: 44px;
   height: 44px;
   background: #ffffff;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.icon-circle.heart {
-  background: #ffffff;
+.icon-pill svg {
+  width: 18px;
+  height: 18px;
+  stroke: #8e9593;
+  stroke-width: 1.8;
+  fill: none;
 }
 
 /* Login */
@@ -123,6 +137,6 @@ html, body {
 }
 
 .login-btn:hover {
-  transform: scale(1.06);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
