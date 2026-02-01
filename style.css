@@ -12,11 +12,14 @@ html, body {
 
 .page {
   width: 95%;
-  height: 90%;
+  height: 92%;
   margin: 2% auto;
   background: #f2f5ee;
   border-radius: 28px;
   padding: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 18px;
 }
 
 /* TOP BAR */
@@ -99,7 +102,7 @@ html, body {
   fill: none;
 }
 
-/* ICON BUTTONS */
+/* ICONS */
 .icon-circle {
   width: 44px;
   height: 44px;
@@ -127,10 +130,38 @@ html, body {
   border: none;
   font-size: 14px;
   font-weight: 500;
-  cursor: pointer;
 }
 
-/* PLACEHOLDER BELOW */
-.content-placeholder {
-  height: calc(100% - 92px);
+/* PLACEHOLDERS BELOW */
+.hero {
+  background: #ffffff;
+  border-radius: 28px;
+}
+
+.right-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.side-card {
+  height: 160px;
+  background: #ffffff;
+  border-radius: 24px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 16px;
+}
+
+.bottom-card {
+  height: 140px;
+  background: #ffffff;
+  border-radius: 24px;
+}
+
+.bottom-card.wide {
+  grid-column: span 1;
 }
