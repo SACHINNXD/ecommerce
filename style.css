@@ -162,10 +162,8 @@ body {
   min-height: 360px;
 }
 
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+..hero-text {
+  display: none;
 }
 
 .tag {
