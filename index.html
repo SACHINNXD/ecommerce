@@ -14,11 +14,13 @@
     <header class="topbar">
       <div class="logo"></div>
 
+      <!-- Search Bar -->
       <div class="search-bar">
         <input type="text" placeholder="Search products..." />
         <button class="search-btn">⌕</button>
       </div>
 
+      <!-- Action Buttons -->
       <div class="top-actions">
         <button class="icon-btn heart" aria-label="Wishlist"></button>
         <button class="icon-btn cart" aria-label="Cart"></button>
@@ -31,13 +33,24 @@
 
       <!-- Hero Section -->
       <section class="hero">
+
+        <!-- Left Content -->
         <div class="hero-text">
           <div class="tag"></div>
           <div class="title"></div>
           <div class="subtitle"></div>
           <div class="cta"></div>
         </div>
-        <div class="hero-image"></div>
+
+        <!-- Headphones Image Area (was placeholder before) -->
+        <div class="hero-image">
+          <img
+            id="productImage"
+            src="blue.png"
+            alt="Headphones"
+          />
+        </div>
+
       </section>
 
       <!-- Right Column -->
@@ -45,14 +58,43 @@
 
         <!-- Popular Colors -->
         <div class="colors-card">
-          <div class="colors-header">Popular Colors</div>
-          <div class="colors-row">
-            <div class="circle blue"></div>
-            <div class="circle orange"></div>
-            <div class="circle green"></div>
-            <div class="circle red"></div>
-            <div class="circle cyan"></div>
+
+          <div class="colors-header">
+            Popular Colors
           </div>
+
+          <div class="colors-row">
+            <div
+              class="circle blue active"
+              data-color="blue"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="circle orange"
+              data-color="orange"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="circle green"
+              data-color="green"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="circle red"
+              data-color="red"
+              tabindex="0"
+            ></div>
+
+            <div
+              class="circle cyan"
+              data-color="cyan"
+              tabindex="0"
+            ></div>
+          </div>
+
         </div>
 
         <div class="product-card rectangle"></div>
@@ -72,6 +114,9 @@
     </main>
 
   </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 
 </body>
 </html>
