@@ -399,3 +399,32 @@ body {
   position: relative;
   z-index: 2;
 }
+
+/* ─── Hero Image Cleanup Mask (Addon) ───────────────── */
+
+/* Add a clean overlay to hide floating elements */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 70% 50%,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.25) 40%,
+      rgba(255,255,255,0.65) 65%,
+      rgba(255,255,255,0.95) 100%
+    );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Keep text above mask */
+.hero-text {
+  z-index: 3;
+}
+
+/* Image stays below mask */
+.hero-image {
+  z-index: 1;
+}
