@@ -102,7 +102,7 @@ body {
   transform: scale(0.96);
 }
 
-/* Heart Icon (Red) */
+/* Heart Icon */
 .icon-btn.heart::before,
 .icon-btn.heart::after {
   content: "";
@@ -124,7 +124,7 @@ body {
   transform: rotate(45deg);
 }
 
-/* Cart Icon (Refined) */
+/* Cart Icon */
 .icon-btn.cart::before {
   content: "";
   position: absolute;
@@ -215,6 +215,7 @@ body {
   gap: 20px;
 }
 
+/* Popular Colours Card */
 .colors-card {
   background: #ffffff;
   border-radius: 24px;
@@ -223,12 +224,19 @@ body {
   justify-content: space-between;
 }
 
+/* Popular Colour Circles — 1:1 */
 .circle {
   width: 36px;
   height: 36px;
-  background: #d0d6d3;
   border-radius: 50%;
 }
+
+/* Exact Colour Set */
+.circle:nth-child(1) { background: #000000; }
+.circle:nth-child(2) { background: #f44336; }
+.circle:nth-child(3) { background: #ffeb3b; }
+.circle:nth-child(4) { background: #2196f3; }
+.circle:nth-child(5) { background: #4caf50; }
 
 .product-card {
   background: #ffffff;
