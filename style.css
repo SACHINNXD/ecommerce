@@ -162,8 +162,8 @@ body {
   min-height: 360px;
 }
 
-..hero-text {
-  display: none;
+.hero-text {
+  display: none !important;
 }
 
 .tag {
