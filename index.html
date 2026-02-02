@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Basic Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Page Title -->
   <title>UI Layout Clone</title>
+
+  <!-- Main Styles -->
   <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
 
+  <!-- App Wrapper -->
   <div class="app">
 
-    <!-- Top Bar -->
+    <!-- ───────────────── Top Bar ───────────────── -->
     <header class="topbar">
+
+      <!-- Logo Placeholder -->
       <div class="logo"></div>
 
       <!-- Search Bar -->
@@ -20,50 +30,77 @@
         <button class="search-btn">⌕</button>
       </div>
 
-      <!-- Action Buttons -->
+      <!-- Right Side Actions -->
       <div class="top-actions">
-        <button class="icon-btn heart" aria-label="Wishlist"></button>
-        <button class="icon-btn cart" aria-label="Cart"></button>
-        <div class="avatar"></div>
-      </div>
-    </header>
 
-    <!-- Main Grid -->
+        <!-- Wishlist -->
+        <button class="icon-btn heart" aria-label="Wishlist"></button>
+
+        <!-- Cart -->
+        <button class="icon-btn cart" aria-label="Cart"></button>
+
+        <!-- User Avatar -->
+        <div class="avatar"></div>
+
+      </div>
+
+    </header>
+    <!-- ─────────────── End Top Bar ─────────────── -->
+
+
+    <!-- ───────────────── Main Layout Grid ───────────────── -->
     <main class="grid">
 
-      <!-- Hero Section -->
+      <!-- ───────────── Hero Section (Left Big Card) ───────────── -->
       <section class="hero">
 
-        <!-- Left Content -->
+        <!-- Hero Text (Skeletons kept, NOT deleted) -->
         <div class="hero-text">
+
+          <!-- Tag -->
           <div class="tag"></div>
+
+          <!-- Title -->
           <div class="title"></div>
+
+          <!-- Subtitle -->
           <div class="subtitle"></div>
+
+          <!-- CTA Button -->
           <div class="cta"></div>
+
         </div>
 
-        <!-- Headphones Image Area (was placeholder before) -->
+        <!-- Hero Image Layer -->
         <div class="hero-image">
+
+          <!-- Main Product Image -->
           <img
             id="productImage"
             src="blue.png"
-            alt="Headphones"
+            alt="Headphones Product Image"
           />
+
         </div>
 
       </section>
+      <!-- ───────────── End Hero Section ───────────── -->
 
-      <!-- Right Column -->
+
+      <!-- ───────────── Right Column ───────────── -->
       <aside class="right-column">
 
-        <!-- Popular Colors -->
+        <!-- Popular Colors Card -->
         <div class="colors-card">
 
+          <!-- Header -->
           <div class="colors-header">
             Popular Colors
           </div>
 
+          <!-- Color Buttons -->
           <div class="colors-row">
+
             <div
               class="circle blue active"
               data-color="blue"
@@ -93,29 +130,57 @@
               data-color="cyan"
               tabindex="0"
             ></div>
+
           </div>
 
         </div>
+        <!-- ───────── End Popular Colors ───────── -->
 
-        <div class="product-card rectangle"></div>
+
+        <!-- Rectangle Card BELOW Colors (ORIGINAL KEPT) -->
+        <div class="product-card rectangle">
+
+          <!-- Added Image (NOT replacing container) -->
+          <img
+            src="img1.png"
+            alt="Additional Product Preview"
+          />
+
+        </div>
+
+
+        <!-- Tall Product Card (UNCHANGED) -->
         <div class="product-card tall"></div>
 
       </aside>
+      <!-- ───────────── End Right Column ───────────── -->
 
-      <!-- Bottom Row -->
+
+      <!-- ───────────── Bottom Section ───────────── -->
       <section class="bottom">
+
+        <!-- Mini Cards -->
         <div class="mini-card square"></div>
         <div class="mini-card square"></div>
         <div class="mini-card square"></div>
+
+        <!-- Stats Card -->
         <div class="stats-card"></div>
+
+        <!-- Wide Card -->
         <div class="wide-card"></div>
+
       </section>
+      <!-- ───────────── End Bottom Section ───────────── -->
 
     </main>
+    <!-- ───────────── End Main Grid ───────────── -->
 
   </div>
+  <!-- ───────────── End App Wrapper ───────────── -->
 
-  <!-- Script -->
+
+  <!-- Scripts -->
   <script src="script.js"></script>
 
 </body>
