@@ -48,7 +48,14 @@ body {
   border: none;
   outline: none;
   font-size: 14px;
+  font-weight: 700;
+  color: #000;
   background: transparent;
+}
+
+.search-bar input::placeholder {
+  color: #000;
+  opacity: 0.7;
 }
 
 .search-btn {
@@ -95,14 +102,14 @@ body {
   transform: scale(0.96);
 }
 
-/* Heart Icon */
+/* Heart Icon (Red) */
 .icon-btn.heart::before,
 .icon-btn.heart::after {
   content: "";
   position: absolute;
   width: 10px;
   height: 16px;
-  background: #000;
+  background: #e53935;
   border-radius: 10px 10px 0 0;
   top: 11px;
 }
@@ -117,24 +124,24 @@ body {
   transform: rotate(45deg);
 }
 
-/* Cart Icon */
+/* Cart Icon (Refined) */
 .icon-btn.cart::before {
   content: "";
   position: absolute;
   width: 18px;
   height: 12px;
-  border: 2px solid #000;
+  border: 2.5px solid #000;
   border-top: none;
-  top: 12px;
+  top: 14px;
   left: 11px;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 5px 5px;
 }
 
 .icon-btn.cart::after {
   content: "";
   position: absolute;
-  width: 4px;
-  height: 4px;
+  width: 4.5px;
+  height: 4.5px;
   background: #000;
   border-radius: 50%;
   bottom: 8px;
