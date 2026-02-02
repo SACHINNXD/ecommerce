@@ -53,11 +53,6 @@ body {
   background: transparent;
 }
 
-.search-bar input::placeholder {
-  color: #000;
-  opacity: 0.7;
-}
-
 .search-btn {
   width: 34px;
   height: 34px;
@@ -65,10 +60,10 @@ body {
   border: none;
   background: #000;
   color: #fff;
-  font-size: 14px;
   cursor: pointer;
 }
 
+/* Actions */
 .top-actions {
   display: flex;
   gap: 12px;
@@ -102,7 +97,7 @@ body {
   transform: scale(0.96);
 }
 
-/* Heart Icon */
+/* Heart */
 .icon-btn.heart::before,
 .icon-btn.heart::after {
   content: "";
@@ -124,7 +119,7 @@ body {
   transform: rotate(45deg);
 }
 
-/* Cart Icon */
+/* Cart */
 .icon-btn.cart::before {
   content: "";
   position: absolute;
@@ -215,28 +210,54 @@ body {
   gap: 20px;
 }
 
-/* Popular Colours Card */
+/* Popular Colors Card */
 .colors-card {
   background: #ffffff;
   border-radius: 24px;
   padding: 16px;
+}
+
+.colors-header {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.colors-row {
   display: flex;
   justify-content: space-between;
 }
 
-/* Popular Colour Circles — 1:1 */
+/* Shiny Circles */
 .circle {
   width: 36px;
   height: 36px;
   border-radius: 50%;
+  position: relative;
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,0.6),
+    inset 0 -3px 6px rgba(0,0,0,0.25),
+    0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Exact Colour Set */
-.circle:nth-child(1) { background: #000000; }
-.circle:nth-child(2) { background: #f44336; }
-.circle:nth-child(3) { background: #ffeb3b; }
-.circle:nth-child(4) { background: #2196f3; }
-.circle:nth-child(5) { background: #4caf50; }
+/* Highlight */
+.circle::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+}
+
+/* Exact Colors */
+.blue   { background: radial-gradient(circle at top left, #7fbaff, #1e5eff); }
+.orange { background: radial-gradient(circle at top left, #ffd08a, #ff8c00); }
+.green  { background: radial-gradient(circle at top left, #8cffb0, #00c853); }
+.red    { background: radial-gradient(circle at top left, #ff9a9a, #ff1744); }
+.cyan   { background: radial-gradient(circle at top left, #8ffbff, #00bcd4); }
 
 .product-card {
   background: #ffffff;
