@@ -2,60 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Nitec Header – Final</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI Layout Clone</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="top-wrapper">
-  <div class="top-bar">
+  <div class="app">
 
-    <!-- LEFT -->
-    <div class="left">
-      <div class="logo">
-        <span class="n">N</span> nitec.
-      </div>
-
-      <div class="search">
-        <input type="text" placeholder="Search products..." />
-        <div class="search-btn">
-          <!-- magnifying glass -->
-          <svg viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="7"></circle>
-            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT -->
-    <div class="right">
-
-      <!-- cart / shopping bag -->
-      <div class="icon">
-        <svg viewBox="0 0 24 24">
-          <path d="M6 7h12l-1 12H7L6 7z"></path>
-          <path d="M9 7a3 3 0 0 1 6 0"></path>
-        </svg>
-      </div>
-
-      <!-- heart -->
-      <div class="icon heart">
-        <svg viewBox="0 0 24 24">
-          <path d="M12 21s-7-4.5-9-8.5A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9 6.5C19 16.5 12 21 12 21z"/>
-        </svg>
-      </div>
-
-      <!-- profile -->
-      <div class="profile">
-        <span class="name">Ryman Alex</span>
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="logo"></div>
+      <div class="search"></div>
+      <div class="top-actions">
+        <div class="icon"></div>
+        <div class="icon"></div>
         <div class="avatar"></div>
       </div>
+    </header>
 
-    </div>
+    <!-- Main Grid -->
+    <main class="grid">
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-text">
+          <div class="tag"></div>
+          <div class="title"></div>
+          <div class="subtitle"></div>
+          <div class="cta"></div>
+        </div>
+
+        <!-- Image Placeholder -->
+        <div class="hero-image"></div>
+      </section>
+
+      <!-- Right Column -->
+      <aside class="right-column">
+
+        <div class="colors-card">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+
+        <div class="product-card rectangle"></div>
+        <div class="product-card tall"></div>
+
+      </aside>
+
+      <!-- Bottom Row -->
+      <section class="bottom">
+
+        <div class="mini-card square"></div>
+        <div class="mini-card square"></div>
+        <div class="mini-card square"></div>
+
+        <div class="stats-card"></div>
+        <div class="wide-card"></div>
+
+      </section>
+
+    </main>
 
   </div>
-</div>
 
 </body>
 </html>
