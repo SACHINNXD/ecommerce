@@ -351,3 +351,21 @@ body {
     inset 0 -3px 6px rgba(0,0,0,0.25),
     0 12px 28px rgba(0,0,0,0.25);
 }
+
+/* ─── Hero Product Image Full Fill (Addon) ───────────────── */
+
+/* Make sure hero-image acts as a frame */
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* important */
+}
+
+/* Make image fill the entire rectangle */
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills entire rectangle */
+  display: block;
+}
