@@ -2,85 +2,77 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- Page Title -->
   <title>UI Layout Clone</title>
 
-  <!-- Main Styles -->
   <link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
 
-  <!-- App Wrapper -->
   <div class="app">
 
-    <!-- ───────────────── Top Bar ───────────────── -->
+    <!-- ───────────── Top Bar ───────────── -->
     <header class="topbar">
 
-      <!-- Logo Placeholder -->
       <div class="logo"></div>
 
-      <!-- Search Bar -->
       <div class="search-bar">
         <input type="text" placeholder="Search products..." />
         <button class="search-btn">⌕</button>
       </div>
 
-      <!-- Right Side Actions -->
       <div class="top-actions">
-
-        <!-- Wishlist -->
-        <button class="icon-btn heart" aria-label="Wishlist"></button>
-
-        <!-- Cart -->
-        <button class="icon-btn cart" aria-label="Cart"></button>
-
-        <!-- User Avatar -->
+        <button class="icon-btn heart"></button>
+        <button class="icon-btn cart"></button>
         <div class="avatar"></div>
-
       </div>
 
     </header>
-    <!-- ─────────────── End Top Bar ─────────────── -->
+    <!-- ───────────── End Top Bar ───────────── -->
 
 
-    <!-- ───────────────── Main Layout Grid ───────────────── -->
+    <!-- ───────────── Main Grid ───────────── -->
     <main class="grid">
 
-      <!-- ───────────── Hero Section (Left Big Card) ───────────── -->
+      <!-- ───────────── Hero Section ───────────── -->
       <section class="hero">
 
-        <!-- Hero Text (Skeletons kept, NOT deleted) -->
+        <!-- Left: Text -->
         <div class="hero-text">
 
-          <!-- Tag -->
-          <div class="tag"></div>
+          <div class="tag">Music is Classic</div>
 
-          <!-- Title -->
-          <div class="title"></div>
+          <h1 class="hero-title">
+            Sequoia Inspiring<br />
+            Musico.
+          </h1>
 
-          <!-- Subtitle -->
-          <div class="subtitle"></div>
+          <div class="hero-info">
+            <span class="hero-index">01</span>
+            <span class="hero-line"></span>
+            <div class="hero-desc">
+              <strong>Clear Sounds</strong><br />
+              Making your dream music come true<br />
+              stay with Sequios Sounds!
+            </div>
+          </div>
 
-          <!-- CTA Button -->
-          <div class="cta"></div>
+          <button class="hero-btn">
+            View All Products
+          </button>
 
         </div>
 
-        <!-- Hero Image Layer -->
+        <!-- Right: Product Image -->
         <div class="hero-image">
-
-          <!-- Main Product Image -->
           <img
             id="productImage"
             src="blue.png"
-            alt="Headphones Product Image"
+            alt="Headphones"
           />
-
         </div>
 
       </section>
@@ -90,66 +82,29 @@
       <!-- ───────────── Right Column ───────────── -->
       <aside class="right-column">
 
-        <!-- Popular Colors Card -->
+        <!-- Popular Colors -->
         <div class="colors-card">
 
-          <!-- Header -->
           <div class="colors-header">
             Popular Colors
           </div>
 
-          <!-- Color Buttons -->
           <div class="colors-row">
-
-            <div
-              class="circle blue active"
-              data-color="blue"
-              tabindex="0"
-            ></div>
-
-            <div
-              class="circle orange"
-              data-color="orange"
-              tabindex="0"
-            ></div>
-
-            <div
-              class="circle green"
-              data-color="green"
-              tabindex="0"
-            ></div>
-
-            <div
-              class="circle red"
-              data-color="red"
-              tabindex="0"
-            ></div>
-
-            <div
-              class="circle cyan"
-              data-color="cyan"
-              tabindex="0"
-            ></div>
-
+            <div class="circle blue active" data-color="blue"></div>
+            <div class="circle orange" data-color="orange"></div>
+            <div class="circle green" data-color="green"></div>
+            <div class="circle red" data-color="red"></div>
+            <div class="circle cyan" data-color="cyan"></div>
           </div>
 
         </div>
-        <!-- ───────── End Popular Colors ───────── -->
 
-
-        <!-- Rectangle Card BELOW Colors (ORIGINAL KEPT) -->
+        <!-- Rectangle Image Card -->
         <div class="product-card rectangle">
-
-          <!-- Added Image (NOT replacing container) -->
-          <img
-            src="img1.png"
-            alt="Additional Product Preview"
-          />
-
+          <img src="img1.png" alt="Product Preview" />
         </div>
 
-
-        <!-- Tall Product Card (UNCHANGED) -->
+        <!-- Tall Card -->
         <div class="product-card tall"></div>
 
       </aside>
@@ -158,29 +113,18 @@
 
       <!-- ───────────── Bottom Section ───────────── -->
       <section class="bottom">
-
-        <!-- Mini Cards -->
         <div class="mini-card square"></div>
         <div class="mini-card square"></div>
         <div class="mini-card square"></div>
-
-        <!-- Stats Card -->
         <div class="stats-card"></div>
-
-        <!-- Wide Card -->
         <div class="wide-card"></div>
-
       </section>
-      <!-- ───────────── End Bottom Section ───────────── -->
 
     </main>
     <!-- ───────────── End Main Grid ───────────── -->
 
   </div>
-  <!-- ───────────── End App Wrapper ───────────── -->
 
-
-  <!-- Scripts -->
   <script src="script.js"></script>
 
 </body>
